@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/islander/static/css/main.0493103d.css",
+    "main.js": "/islander/static/js/main.b8bf7775.js",
+    "index.html": "/islander/index.html",
+    "main.0493103d.css.map": "/islander/static/css/main.0493103d.css.map",
+    "main.b8bf7775.js.map": "/islander/static/js/main.b8bf7775.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0493103d.css",
+    "static/js/main.b8bf7775.js"
+  ]
+}
