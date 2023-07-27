@@ -1,0 +1,102 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    background-color: #39a8ec;
+}
+
+.game-container {
+    /* background-color: rgba(133, 133, 133, 0.123); */
+    width: min(100vh, 100vw);
+    aspect-ratio: 1;
+    transform:
+        rotateX(60deg)
+        rotateZ(45deg);
+    transform-style: preserve-3d;
+}
+
+.island {
+    /* height: 10%; */
+    aspect-ratio: 1;
+    border-radius: 10%;
+    position: absolute;
+    transform-origin: 0 0;
+    transform-style: preserve-3d;
+}
+
+.top, .soil {
+    position: absolute;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.top:first-child {
+    background-color: rgb(47, 198, 47);
+
+}
+
+.top {
+    background-color: rgb(51, 161, 51);
+}
+
+.soil {
+    background-color: rgb(107, 78, 78);
+}
+
+.bridge {
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 10%;
+    transform-origin: 0 0;
+    transform-style: preserve-3d;
+}
+
+.bridge-layer:first-child {
+    background-color: rgb(154, 140, 106);
+}
+
+.bridge-layer {
+    position: absolute;
+    background-color: rgb(132, 121, 92);
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.has-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.has-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.has-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.has-bottom {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.character {
+    background-color: rgb(216, 255, 24);
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    /* transition: 0.2s; */
+}
